@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out; /* Thêm hiệu ứng border */
+}
+
+input:focus {
+    border-color: #4caf50; /* Màu border khi input được focus */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+button, a.add-contract, button.logout {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+button:hover, a.add-contract:hover, button.logout:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Thêm kiểu cho nút logout */
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+button.logout {
+    background-color: #f44336; /* Màu đỏ */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+button.logout:hover {
+    background-color: #d32f2f; /* Màu đỏ đậm khi hover */
+    transform: scale(1.05);
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Thêm khoảng cách giữa form và nút */
+}
+.login-btn,
+.add-contract-btn,
+.logout-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.login-btn:hover,
+.add-contract-btn:hover,
+.logout-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
